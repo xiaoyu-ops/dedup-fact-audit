@@ -1,0 +1,10 @@
+numpy>=1.24
+pyarrow>=14
+# model calls (only for re-running extraction, judging, or QA)
+openai>=1.40
+anthropic>=0.34
+# dense retrieval
+torch>=2.1
+transformers>=4.40
+# raw Common Crawl pipeline
+datatrove[processing]>=0.3
