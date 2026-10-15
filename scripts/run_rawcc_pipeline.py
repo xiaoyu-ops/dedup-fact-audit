@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""FineWeb-style pipeline on raw Common Crawl WARC files with DataTrove (Section 4, Appendix D).
+"""FineWeb-style pipeline on raw Common Crawl WARC files with DataTrove (Section 4, Appendix E).
 
 Inputs: the 128 WARC paths in data/panels/rawcc_warc_files.txt (CC-MAIN-2025-26; shuffled with seed 20261024),
 downloaded under RAW_DIR as 00000.warc.gz ... 00127.warc.gz in that order.
