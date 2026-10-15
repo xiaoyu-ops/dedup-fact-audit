@@ -58,8 +58,9 @@ supplementary.pdf
   removal relative to exact-deduplicated words, i.e. `1 - (1 - reduction) / (1 - reduction_exact)`.
 * Method code `D` in matched-budget files is Sub-doc merge; `one_first` is Keep-One-Earliest;
   `minhash@t` / `minhash_latest@t` are MinHash-Earliest/Latest at threshold t.
-* `panels/rawcc_audit_pages.jsonl`: `weight` is the stratum population divided by the *planned* stratum sample;
-  estimates in the paper reweight each stratum by its *audited* pages (see `reproduce_tables.py`).
+* `panels/rawcc_audit_pages.jsonl`: `stratum_planned_sample` is the planned sample (88, 105, 112, 195; 500 pages),
+  `stratum_audited` the pages completed before the budget ran out (39, 56, 27, 114), and `weight` the stratum
+  population divided by the audited pages, as used for the paper's estimates.
 * `results/qa_per_question.jsonl`: one row per question x policy x retriever; `correct` for independent
   questions, `answer_category` (latest / outdated / other) for outdated-value questions.
 * Prompts for extraction, judging, fact types, QA answering and scoring, and question writing are in
